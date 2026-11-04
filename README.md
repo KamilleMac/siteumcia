@@ -15,7 +15,13 @@ Trabalho da faculdade, feito como atividade de **horas de extensão**. O objetiv
 
 ## Estudantes
 
-- Kamille Mac
+- Kamille Machado
+- Felipe Barbosa da Silva
+- Renato da Silva Santana
+- Bruno Otávio Carvalho Leite
+- Guilherme Ribeiro de Morais Carvalho
+- Danilo Duarti Martins
+- Nicolas Cagnani Mattos (Grupo 1)
 
 ## O que tem no site
 
