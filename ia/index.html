@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<!--
+  Autora: Kamille Machado
+  UMC - Análise e Desenvolvimento de Sistemas
+  Data: 25/10/2026
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IA pode imitar seu parente</title>
+  <meta name="description" content="Golpistas usam inteligência artificial para imitar a voz e o rosto de familiares. Saiba como se proteger.">
+  <meta property="og:title" content="IA pode imitar seu parente">
+  <meta property="og:description" content="Golpistas usam inteligência artificial para imitar a voz e o rosto de familiares. Saiba como se proteger.">
+  <meta name="theme-color" content="#15132B">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;800&family=Figtree:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topo">
+  <div class="wrap">
+    <span>Universidade de Mogi das Cruzes</span>
+    <span>Projeto informativo</span>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <span class="etiqueta">INTELIGÊNCIA ARTIFICIAL - IA</span>
+      <h1>A <em>IA</em> pode imitar a voz e o rosto de quem você ama.</h1>
+      <p class="lead">Golpistas copiam parentes em ligações e vídeos para pedir dinheiro. Veja como se proteger.</p>
+      <div class="botoes">
+        <a class="botao" href="#protege">Como se proteger</a>
+        <a class="botao simples" href="#como">Como funciona</a>
+      </div>
+    </div>
+
+    <!-- Celular desenhado: videochamada falsa -->
+    <div class="celular" aria-hidden="true">
+      <div class="tela">
+        <div class="topinho">Chamada de vídeo</div>
+        <svg viewBox="0 0 250 300" width="100%">
+          <defs>
+            <linearGradient id="pele" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F3C3A1"/><stop offset="1" stop-color="#D99A78"/></linearGradient>
+          </defs>
+          <!-- fundo da chamada -->
+          <rect x="30" y="40" width="190" height="230" rx="18" fill="#2B2755"/>
+          <!-- ombros -->
+          <ellipse cx="125" cy="260" rx="70" ry="48" fill="#4A4590"/>
+          <!-- pescoço -->
+          <rect x="108" y="190" width="34" height="40" fill="url(#pele)"/>
+          <!-- rosto -->
+          <ellipse cx="125" cy="140" rx="52" ry="62" fill="url(#pele)"/>
+          <!-- cabelo -->
+          <path d="M72 130 C70 80 100 64 126 64 C154 64 182 82 178 130 C168 106 150 98 126 98 C102 98 82 108 72 130Z" fill="#2A1D1A"/>
+          <!-- olhos -->
+          <circle cx="104" cy="142" r="5" fill="#2A1D1A"/><circle cx="148" cy="142" r="5" fill="#2A1D1A"/>
+          <!-- boca -->
+          <path d="M108 176 Q126 190 144 176" fill="none" stroke="#7A3B2E" stroke-width="4" stroke-linecap="round"/>
+          <!-- linhas rosa: a IA "lendo" o rosto -->
+          <g fill="none" stroke="#FF4D8D" stroke-width="1.2" opacity="0.9">
+            <path d="M75 140 H175 M80 110 H170 M82 170 H168 M100 82 V198 M125 78 V204 M150 82 V198"/>
+            <ellipse cx="125" cy="140" rx="52" ry="62"/>
+          </g>
+          <!-- cantos brancos da câmera -->
+          <g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round">
+            <path d="M44 70 V54 H60 M206 54 H190 M206 54 V70 M44 256 V272 H60 M206 256 V272 H190"/>
+          </g>
+        </svg>
+        <div class="aviso alto">Rosto gerado por IA?</div>
+        <!-- onda de voz (as barras se mexem) -->
+        <svg class="onda" viewBox="0 0 250 40">
+          <g fill="#FF4D8D">
+            <rect x="40" y="16" width="6" height="8" rx="3"/><rect x="56" y="10" width="6" height="20" rx="3"/><rect x="72" y="4" width="6" height="32" rx="3"/><rect x="88" y="12" width="6" height="16" rx="3"/><rect x="104" y="6" width="6" height="28" rx="3"/><rect x="120" y="14" width="6" height="12" rx="3"/><rect x="136" y="2" width="6" height="36" rx="3"/><rect x="152" y="10" width="6" height="20" rx="3"/><rect x="168" y="16" width="6" height="8" rx="3"/><rect x="184" y="8" width="6" height="24" rx="3"/><rect x="200" y="15" width="6" height="10" rx="3"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="fatos">
+  <div class="wrap">
+    <div class="fato">Poucos segundos de áudio bastam para copiar uma voz.</div>
+    <div class="fato">O golpe vale para ligação e para videochamada.</div>
+    <div class="fato">Quem liga tem pressa. Você não precisa ter.</div>
+  </div>
+</section>
+
+<section class="explica">
+  <div class="wrap">
+    <div class="titulo-secao">
+      <span class="pequeno">O que está acontecendo</span>
+      <h2>Nem tudo que você vê ou ouve é real.</h2>
+    </div>
+    <div class="texto">
+      <p>A inteligência artificial (IA) aprende como uma pessoa fala e como o rosto se mexe. Depois, cria uma voz ou um vídeo muito parecidos.</p>
+      <p>Isso se chama deepfake. Os golpistas usam para fingir que são um neto, um filho ou um amigo.</p>
+    </div>
+  </div>
+</section>
+
+<section class="passos" id="como">
+  <div class="wrap">
+    <div class="titulo-secao">
+      <span class="pequeno">Como o golpe funciona</span>
+      <h2>Três passos, em poucos minutos.</h2>
+    </div>
+    <div class="grade">
+      <div class="passo"><b>1</b><h3>Copiam voz e rosto</h3><p>Usam áudios e vídeos postados nas redes sociais.</p></div>
+      <div class="passo"><b>2</b><h3>Ligam ou chamam no vídeo</h3><p>Parecem alguém da família, na voz e na cara.</p></div>
+      <div class="passo"><b>3</b><h3>Pedem dinheiro com pressa</h3><p>Dizem que é urgente para você não pensar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sinais">
+  <div class="wrap">
+    <div class="titulo-secao">
+      <span class="pequeno">Sinais de alerta</span>
+      <h2>Desconfie quando...</h2>
+    </div>
+    <div class="grade">
+      <div class="sinal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <div><h3>Pedem dinheiro com urgência</h3><p>Pix ou transferência "para agora".</p></div>
+      </div>
+      <div class="sinal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+        <div><h3>Pedem segredo</h3><p>"Não conte a ninguém" é sinal de golpe.</p></div>
+      </div>
+      <div class="sinal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+        <div><h3>Número novo ou estranho</h3><p>Diz ser da família, mas você não conhece o número.</p></div>
+      </div>
+      <div class="sinal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M10 10l4 2-4 2z"/></svg>
+        <div><h3>Voz ou imagem esquisita</h3><p>Pausas estranhas, vídeo travando, boca fora do tempo.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="termos">
+  <div class="wrap">
+    <div class="titulo-secao">
+      <span class="pequeno">O que é cada coisa</span>
+      <h2>Entenda cada palavra.</h2>
+    </div>
+    <div class="grade">
+      <div class="termo"><h3>Inteligência artificial (IA)</h3><p>Programa de computador que aprende com muitos exemplos e consegue criar voz, imagem, vídeo e texto.</p></div>
+      <div class="termo"><h3>Voz falsa</h3><p>A IA copia a voz de uma pessoa a partir de alguns áudios postados nas redes sociais e fala o que o golpista quiser.</p></div>
+      <div class="termo"><h3>Vídeo falso (deepfake)</h3><p>Vídeo em que o rosto e a voz de alguém são colocados por IA. Parece real, mas a pessoa nunca disse aquilo.</p></div>
+      <div class="termo"><h3>Pix</h3><p>Transferência de dinheiro na hora. Depois de enviado, é muito difícil desfazer.</p></div>
+      <div class="termo"><h3>MED</h3><p>Pedido de devolução do Pix feito ao seu banco quando você cai em golpe. Quanto antes pedir, melhor.</p></div>
+      <div class="termo"><h3>Palavra secreta</h3><p>Uma palavra combinada só entre a família. Quem de fato é parente sabe responder.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dados">
+  <div class="wrap">
+    <div class="titulo-secao">
+      <span class="pequeno">Quantas pessoas caem?</span>
+      <h2>Não é só com os outros.</h2>
+    </div>
+    <div class="grade">
+      <div class="dado"><b>24%</b><h3>dos brasileiros foram vítimas de golpe digital</h3><p>Em 12 meses, mais de 40 milhões de pessoas com 16 anos ou mais. Pesquisa do DataSenado, 2024.</p></div>
+      <div class="dado"><b>17 milhões</b><h3>de vítimas de golpes financeiros</h3><p>Cerca de 1 em cada 10 brasileiros caiu em golpe por celular ou internet em um ano. Datafolha e Fórum Brasileiro de Segurança Pública, 2024.</p></div>
+      <div class="dado"><b>1 em 4</b><h3>recebeu uma tentativa de golpe</h3><p>Por aplicativo de mensagem ou ligação, em 12 meses. Datafolha e Fórum Brasileiro de Segurança Pública, 2024.</p></div>
+    </div>
+    <p class="nota">Os números são de golpes digitais em geral. Ainda não há uma pesquisa oficial só sobre golpes com voz e rosto falsos feitos por IA.</p>
+  </div>
+</section>
+
+<section class="protege" id="protege">
+  <div class="wrap">
+    <div>
+      <div class="titulo-secao">
+        <span class="pequeno">Como se proteger</span>
+        <h2>Confirme antes de pagar.</h2>
+      </div>
+      <ul class="lista">
+        <li>Desligue e ligue de volta<span>No número que você já tem salvo.</span></li>
+        <li>Combine uma palavra secreta<span>Só a família sabe. Peça no início da conversa.</span></li>
+        <li>No vídeo, peça para virar o rosto e acenar<span>Vídeos falsos costumam falhar nesses movimentos.</span></li>
+        <li>Confirme com outro parente<span>Antes de fazer qualquer pagamento.</span></li>
+        <li>Deixe suas redes só para amigos<span>Assim há menos áudio e vídeo seu para copiar.</span></li>
+              <li>Ensine os mais velhos a desligar e ligar de volta antes de qualquer pagamento.</li>
+        <li>Não atenda nem responda mensagens de números desconhecidos que dizem ser da família.</li>
+        <li>Desconfie de qualquer pedido com pressa, mesmo com a voz de quem você ama.</li>
+      </ul>
+    </div>
+    <aside class="regra">
+      <small>Regra de ouro</small>
+      <p>Pediu dinheiro com pressa? Desligue e confirme.</p>
+    </aside>
+  </div>
+</section>
+
+<section class="telas" id="passo-a-passo">
+  <div class="wrap">
+    <div class="titulo-secao">
+      <span class="pequeno">Passo a passo na tela</span>
+      <h2>Recebeu um pedido de dinheiro? Faça isto.</h2>
+    </div>
+    <div class="grade">
+      <div class="etapa">
+        <span class="num">1</span>
+        <div class="celular"><div class="visor">
+          <div class="centro" style="padding-top:34px"><div style="font-size:20px">Neto</div><small style="color:var(--cinza)">Chamada de vídeo</small><div class="balao" style="margin:18px 0 0">"Vó, preciso de um Pix agora!"</div></div>
+        </div></div>
+        <h3>Alguém da família pede dinheiro</h3>
+        <p>Pode ser uma ligação ou chamada de vídeo, com voz e rosto iguais aos do parente.</p>
+      </div>
+      <div class="etapa">
+        <span class="num">2</span>
+        <div class="celular"><div class="visor">
+          <div class="centro" style="padding-top:34px"><div style="font-size:20px">Neto</div><small style="color:var(--cinza)">Chamada de vídeo</small><div style="margin-top:46px"><span class="botao-vermelho alvo" style="outline-offset:3px">Desligar</span></div></div>
+        </div></div>
+        <h3>Desligue</h3>
+        <p>Não pague nada. Desligue a chamada sem pressa.</p>
+      </div>
+      <div class="etapa">
+        <span class="num">3</span>
+        <div class="celular"><div class="visor">
+          <div class="barra"><span>Contatos</span></div>
+          <div class="item">Maria (filha)</div><div class="item alvo">Neto<small>Número salvo</small></div><div class="item">Carlos (genro)</div>
+        </div></div>
+        <h3>Ligue de volta</h3>
+        <p>Ligue para o número que você já tem salvo no celular, não para o que chamou.</p>
+      </div>
+      <div class="etapa">
+        <span class="num">4</span>
+        <div class="celular"><div class="visor">
+          <div class="barra"><span>Neto</span></div>
+          <div class="balao meu">Qual é a nossa palavra secreta?</div><div class="balao">...</div><div class="balao meu">Vou falar com a mamãe antes.</div>
+        </div></div>
+        <h3>Confirme com a palavra secreta</h3>
+        <p>Peça a palavra que só a família sabe. Se não souber, é golpe. Confirme também com outro parente.</p>
+      </div>
+    </div>
+    <p class="nota">Desenhos para ajudar. Os menus podem ficar um pouco diferentes conforme o seu celular.</p>
+  </div>
+</section>
+
+<section class="sinais combate">
+  <div class="wrap">
+    <div class="titulo-secao">
+      <span class="pequeno">Como combater</span>
+      <h2>Pare o golpe antes que ele cresça.</h2>
+    </div>
+    <div class="grade">
+      <div class="sinal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+        <div><h3>Denuncie o golpe</h3><p>Faça boletim de ocorrência e avise o seu banco.</p></div>
+      </div>
+      <div class="sinal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg>
+        <div><h3>Bloqueie e denuncie</h3><p>Bloqueie o número e denuncie a conta no aplicativo.</p></div>
+      </div>
+      <div class="sinal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+        <div><h3>Use a verificação em duas etapas</h3><p>É um código de segurança extra, um PIN que só você sabe. Em WhatsApp e redes sociais, mesmo que alguém descubra sua senha ou o código do SMS, sem o PIN não consegue entrar. Nunca passe esse PIN para ninguém, nem por voz de parente.</p></div>
+      </div>
+      <div class="sinal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.3-5.7M20 4v5h-5"/></svg>
+        <div><h3>Mantenha o celular atualizado</h3><p>As atualizações corrigem falhas de segurança.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="passos ajuda">
+  <div class="wrap">
+    <div class="titulo-secao">
+      <span class="pequeno">Como podemos ajudar</span>
+      <h2>Proteger o outro também é proteção.</h2>
+    </div>
+    <div class="grade">
+      <div class="passo"><b>1</b><h3>Converse com a família</h3><p>Explique que a IA imita voz e rosto, principalmente aos mais velhos.</p></div>
+      <div class="passo"><b>2</b><h3>Combinem a palavra secreta</h3><p>Escolham juntos e não contem a ninguém.</p></div>
+      <div class="passo"><b>3</b><h3>Compartilhe este site</h3><p>Quanto mais gente souber, menos gente cai.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="caiu">
+  <div class="wrap">
+    <div class="caixa">
+      <div class="titulo-secao">
+        <span class="pequeno">Já fez o Pix?</span>
+        <h2>Aja rápido.</h2>
+      </div>
+      <ol>
+        <li>Ligue para o seu banco e peça para bloquear.</li>
+        <li>Peça o MED (devolução do Pix) e faça o B.O. (boletim de ocorrência). Dá para fazer online na Delegacia Eletrônica.</li>
+        <li>Avise a sua família sobre o golpe.</li>
+              <li>Guarde as provas: prints da conversa, o número e o comprovante do Pix.</li>
+        <li>Avise o banco do parente que recebeu o dinheiro, se você souber qual é.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="panfleto">
+  <div class="wrap">
+    <div class="titulo-secao">
+      <span class="pequeno">Panfleto</span>
+      <h2>O panfleto sobre IA imitando familiares.</h2>
+    </div>
+    <div class="folhas">
+      <figure>
+        <a href="panfleto-frente.png" target="_blank" rel="noopener"><img src="panfleto-frente.png" alt="Panfleto sobre IA imitando familiares, frente" width="800" height="1680" loading="lazy"></a>
+        <figcaption>Frente</figcaption>
+      </figure>
+      <figure>
+        <a href="panfleto-verso.png" target="_blank" rel="noopener"><img src="panfleto-verso.png" alt="Panfleto sobre IA imitando familiares, verso" width="800" height="1680" loading="lazy"></a>
+        <figcaption>Verso</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<footer class="sobre">
+  <div class="wrap">
+    <h2>Sobre o projeto</h2>
+    <dl>
+      <div><dt>Universidade</dt><dd>Universidade de Mogi das Cruzes</dd></div>
+      <div><dt>Curso</dt><dd>Análise e Desenvolvimento de Sistemas</dd></div>
+      <div><dt>Estudantes</dt><dd>Kamille Machado<br>Felipe Barbosa da Silva<br>Renato da Silva Santana<br>Bruno Otávio Carvalho Leite<br>Vinicius de Souza da Silva</dd></div>
+      <div><dt>Professor responsável</dt><dd>Bruno Messias Aguiar</dd></div>
+    </dl>
+    <div class="fim">
+      <p>Projeto informativo com foco em tecnologia e segurança.</p>
+      <!-- Botão que leva para o meu site -->
+      <a class="criador" href="https://traumas.cc" target="_blank" rel="noopener">Criado com carinho &lt;3 <span>&rarr;</span></a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
