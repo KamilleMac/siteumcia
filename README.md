@@ -19,9 +19,7 @@ Trabalho da faculdade, feito como atividade de **horas de extensão**. O objetiv
 - Felipe Barbosa da Silva
 - Renato da Silva Santana
 - Bruno Otávio Carvalho Leite
-- Guilherme Ribeiro de Morais Carvalho
-- Danilo Duarti Martins
-- Nicolas Cagnani Mattos (Grupo 1)
+- Vinicius de Souza da Silva
 
 ## O que tem no site
 
