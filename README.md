@@ -28,6 +28,7 @@ Trabalho da faculdade, feito como atividade de **horas de extensão**. O objetiv
 - Como se proteger e passo a passo na tela para confirmar antes de pagar
 - Como combater e como ajudar a família
 - O que fazer se já fez o Pix
+- "Entenda cada palavra": IA, voz falsa, deepfake, Pix, MED e palavra secreta
 - Números oficiais de golpes digitais no Brasil
 - Panfleto (frente e verso) para imprimir
 
