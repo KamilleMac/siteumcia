@@ -360,24 +360,6 @@ a:focus-visible { outline: 3px solid var(--cor); outline-offset: 3px; }
   font-size: 15px;
 }
 
-/* Botão "Criado com carinho por..." */
-.criador {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  min-height: 48px;
-  padding: 10px 22px;
-  border-radius: 999px;
-  background: var(--cor);
-  color: var(--escuro);
-  font-weight: 800;
-  text-decoration: none;
-  transition: transform 0.15s;
-}
-
-.criador span { transition: transform 0.15s; }
-.criador:active { transform: scale(0.97); }
-.criador:hover span { transform: translateX(4px); }
 
 /* ---------- PASSO A PASSO NA TELA (desenhos de celular) ---------- */
 .telas { background: var(--papel); }
@@ -505,3 +487,23 @@ a:focus-visible { outline: 3px solid var(--cor); outline-offset: 3px; }
 .caiu li span { display: block; font-weight: 500; font-size: 17px; line-height: 1.55; color: var(--cinza); }
 .caiu li span.onde { margin-top: 12px; padding: 10px 12px; border-radius: 10px; background: var(--cor-suave); color: var(--escuro); font-weight: 700; font-size: 16px; }
 @media (max-width: 1000px) { .caiu ol { grid-template-columns: 1fr; } }
+
+/* ---------- BLOCOS EXPLICADOS: o que é, passo a passo e cuidado ---------- */
+.opcoes { background: var(--branco); }
+.opcoes .resumo { background: var(--papel); }
+.opcao { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 32px; margin-top: 24px; padding: 32px; border: 1px solid var(--linha); border-radius: 24px; background: var(--papel); }
+.opcao h3 { margin: 10px 0 10px; font-size: 30px; }
+.opcao p { color: var(--cinza); }
+.opcao .obs { margin-top: 12px; font-size: 16px; }
+.selo { display: inline-block; padding: 4px 12px; border-radius: 999px; background: var(--escuro); color: #fff; font-size: 13px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
+.opcao .como { padding: 22px 24px; border: 1px solid var(--linha); border-radius: 18px; background: var(--branco); }
+.opcao .como h4 { margin: 0 0 12px; color: var(--cor-forte); font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; }
+.opcao ol { margin: 0; padding-left: 24px; display: flex; flex-direction: column; gap: 10px; font-weight: 600; }
+.opcao ol li::marker { color: var(--cor-forte); font-weight: 800; }
+.opcao .golpe { grid-column: 1 / -1; padding: 16px 20px; border-radius: 14px; background: #FDE7E8; color: #7A1D20; font-weight: 600; }
+.opcao .golpe strong { color: #7A1D20; }
+.extras { margin-top: 40px; }
+.extras > h3 { margin-bottom: 16px; font-size: 26px; }
+.extras .grade { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+@media (max-width: 1000px) { .extras .grade { grid-template-columns: 1fr; } }
+@media (max-width: 800px) { .opcao { grid-template-columns: 1fr; padding: 22px; } .opcao h3 { font-size: 26px; } }
