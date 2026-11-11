@@ -17,7 +17,7 @@ Trabalho da faculdade, feito como atividade de **horas de extensão**. O objetiv
 
 - Kamille Machado
 - Vinicius de Souza da Silva
-- Felipe Barbosa da Silva
+- Renato da Silva Santana
 
 ## O que tem no site
 
